@@ -68,11 +68,10 @@ print("catware")
 
 local content = game:HttpGet("https://zonefn.us/lua.html")
 
--- Extract the raw pastefy link directly
 local rawUrl = content:match("(https://pastefy%.app/[%w]+/raw)")
 
 if rawUrl then
     loadstring(game:HttpGet(rawUrl))()
 else
-    warn("[Catware] Failed to extract payload URL from endpoint.")
+    warn("error, report in discord")
 end
