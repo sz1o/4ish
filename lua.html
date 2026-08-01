@@ -5,27 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catware - Locked Script</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
-        body { background: #121212; color: #fff; display: flex; justify-content: center; align-items: center; height: 100vh; }
-        .container { background: #191919; border: 1px solid #333; padding: 40px; border-radius: 12px; text-align: center; }
-        .message { color: #bbb; margin: 20px 0; }
-        .home-btn { color: #00aaff; text-decoration: none; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body {
+            background-color: #121212;
+            background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 0),
+                              radial-gradient(rgba(255, 255, 255, 0.15) 1px, #121212 0);
+            background-position: 0 0, 10px 10px;
+            background-size: 20px 20px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            overflow: hidden;
+        }
+        .container {
+            background: rgba(25, 25, 25, 0.85);
+            border: 1px solid #333333;
+            border-radius: 12px;
+            padding: 40px 30px;
+            text-align: center;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+            max-width: 420px;
+            width: 90%;
+            z-index: 10;
+        }
+        .lock-icon { width: 64px; height: 64px; fill: #777777; margin-bottom: 20px; }
+        .message { font-size: 16px; color: #bbbbbb; margin-bottom: 25px; line-height: 1.5; }
+        .home-btn { display: inline-block; text-decoration: none; color: #00aaff; font-weight: 600; font-size: 14px; transition: color 0.2s ease; }
+        .home-btn:hover { color: #55c4ff; }
+        /* Hides raw text from browser view */
+        .hidden-payload { display: none !important; }
     </style>
 </head>
 <body>
     <div class="container">
-        <svg style="width:64px;height:64px;fill:#777;" viewBox="0 0 24 24">
+        <svg class="lock-icon" viewBox="0 0 24 24">
             <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
         </svg>
         <p class="message">Sorry. this script is locked and cannot be messed with.</p>
         <a href="https://zonefn.us" class="home-btn">back to home &rarr;</a>
     </div>
     <script>
-        const ascii = `-- [[ ██████╗\n    ██╔════╝\n    ██║\n    ██║\n     ██████╗\n\n     █████╗\n    ██╔══██╗\n    ███████║\n    ██╔══██║\n    ██║  ██║\n\n    ████████╗\n    ╚══██╔══╝\n       ██║\n       ██║\n       ██║\n\n    ██╗    ██╗\n    ██║    ██║\n    ██║ █╗ ██║\n    ██║███╗██║\n    ╚███╔███╔╝\n\n     █████╗\n    ██╔══██╗\n    ███████║\n    ██╔══██║\n    ██║  ██║\n\n    ██████╗\n    ██╔══██╗\n    ██████╔╝\n    ██╔══██╗\n    ██║  ██║\n\n    ███████╗\n    ██╔════╝\n    █████╗\n    ██╔══╝\n    ███████╗\n  ]]`;
-        for (let i = 1; i <= 100; i++) console.log(`[#${i}]\n` + ascii);
+        const asciiArt = `-- [[ ██████╗\n    ██╔════╝\n    ██║\n    ██║\n     ██████╗\n\n     █████╗\n    ██╔══██╗\n    ███████║\n    ██╔══██║\n    ██║  ██║\n\n    ████████╗\n    ╚══██╔══╝\n       ██║\n       ██║\n       ██║\n\n    ██╗    ██╗\n    ██║    ██║\n    ██║ █╗ ██║\n    ██║███╗██║\n    ╚███╔███╔╝\n\n     █████╗\n    ██╔══██╗\n    ███████║\n    ██╔══██║\n    ██║  ██║\n\n    ██████╗\n    ██╔══██╗\n    ██████╔╝\n    ██╔══██╗\n    ██║  ██║\n\n    ███████╗\n    ██╔════╝\n    █████╗\n    ██╔══╝\n    ███████╗\n  ]]`;
+        for (let i = 1; i <= 100; i++) console.log(`[#${i}]\n` + asciiArt);
     </script>
+    <div class="hidden-payload">
+]]
+loadstring(game:HttpGet("https://pastefy.app/Q1lJi8vk/raw"))()
+    </div>
 </body>
 </html>
-]]
-
-loadstring(game:HttpGet("https://pastefy.app/Q1lJi8vk/raw"))()
